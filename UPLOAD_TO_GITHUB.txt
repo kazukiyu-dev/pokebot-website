@@ -1,0 +1,14 @@
+POKEBOT WEBSITE — GITHUB UPLOAD ORDER
+
+This website is split so every Pokémon image folder has fewer than 100 files.
+
+1. Extract this ZIP.
+2. In your GitHub repository, delete the old website files.
+3. Upload the website files plus the assets folder, but leave out pokemon-1 to pokemon-5. Commit changes.
+4. Upload pokemon-1 and commit.
+5. Upload pokemon-2 and commit.
+6. Upload pokemon-3 and commit.
+7. Upload pokemon-4 and commit.
+8. Upload pokemon-5 and commit.
+
+IMPORTANT: Keep pokemon-1, pokemon-2, pokemon-3, pokemon-4 and pokemon-5 at the repository root, beside index.html. Do not upload the ZIP itself.

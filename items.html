@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Search all 2561 public PokeBot items by name, category, effect, and value.">
+  <title>PokeBot Item Database</title>
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="PokeBot home"><img src="assets/images/icon.png" alt="PokeBot icon"><span>Poke<em>Bot</em></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="guide.html">Game Guide</a><a href="commands.html">Commands</a><a href="pokedex.html">Pokédex</a><a href="items.html" aria-current="page">Items</a><a href="moves.html">Moves</a><a href="https://discord.gg/b6aeYMbhjT" target="_blank" rel="noreferrer">Support</a><a class="btn btn-primary btn-small" href="https://discord.com/oauth2/authorize?client_id=1525079752610811924&amp;permissions=8&amp;integration_type=0&amp;scope=bot" target="_blank" rel="noreferrer">Invite PokeBot</a></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero database-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Items</div>
+      <p class="eyebrow">Complete public item reference</p>
+      <h1>Know what to carry. <span class="gradient-text">Use every item wisely.</span></h1>
+      <p class="lead">Search all 2,561 public item entries configured in PokeBot. Browse effects, shop values, sell values, categories, Poké Ball modifiers, and TM or HM details.</p>
+    </div>
+  </section>
+  <section class="section compact">
+    <div class="container">
+      <div class="database-controls">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="item-search" type="search" placeholder="Search item names or effects…" autocomplete="off" aria-label="Search items"></label>
+        <select id="item-category" class="category-select" aria-label="Filter by item category"><option value="">All categories</option></select>
+        <select id="item-market" class="category-select" aria-label="Filter by market availability"><option value="">All values</option><option value="buyable">Buyable</option><option value="sellable">Sellable</option><option value="machine">TM / HM machines</option></select>
+      </div>
+      <div class="database-meta"><span id="item-count">Loading items…</span><span>Use <code>/item info</code> inside Discord for your owned quantity and current-use command.</span></div>
+      <div id="item-grid" class="database-grid" aria-live="polite"></div>
+      <div id="item-pagination" class="pagination" aria-label="Item pages"></div>
+    </div>
+  </section>
+  <div id="item-modal" class="detail-modal" hidden aria-hidden="true"><div class="detail-backdrop" data-close-modal></div><div class="detail-panel detail-panel-small" role="dialog" aria-modal="true" aria-labelledby="item-detail-title"><button class="modal-close" type="button" data-close-modal aria-label="Close details">×</button><div id="item-detail"></div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/images/icon.png" alt=""><span>Poke<em>Bot</em></span></a><p>A fan-made Pokémon-inspired Discord RPG focused on exploration, collection, battles, progression, and multiplayer adventures.</p></div>
+      <div class="footer-links"><h3>Explore</h3><a href="guide.html">Game Guide</a><a href="commands.html">Player Commands</a><a href="pokedex.html">Pokédex</a><a href="items.html">Item Database</a><a href="moves.html">Move Database</a><a href="https://discord.gg/b6aeYMbhjT" target="_blank" rel="noreferrer">Support Server</a></div>
+      <div class="footer-links"><h3>Legal</h3><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> PokeBot.</span><span>Pokémon names and related properties belong to their respective owners. This project is not affiliated with Nintendo, Game Freak, Creatures, or The Pokémon Company.</span></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/items-data.js"></script>
+<script src="assets/js/items.js"></script>
+</body>
+</html>
